@@ -1,0 +1,159 @@
+/* Container */
+.buyer-home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  z-index: 1000; /* High z-index to ensure it's on top */
+  height: 5%;
+}
+
+/* .logo {
+  text-align: center;
+} */
+
+.top-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Main Content */
+.buyer-content {
+  flex: 1;
+  padding: 80px 20px 70px; /* Add padding to avoid overlap */
+  overflow-y: auto;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  display: flex;
+  margin-right: 200px;
+  margin-left: 5%;
+  
+  width: 90%;
+  height: 5%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00796b;
+  padding: 10px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+
+
+/* Ensure all other sections don’t overlap */
+.settings-page-container,
+.chat-section,
+.friends-section,
+.search-section,
+.notifications-section,
+.profile-container {
+  padding-top: 60px; /* Adjust for top bar */
+  padding-bottom: 60px; /* Adjust for bottom bar */
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Blurred background effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #00796b;
+}
+
+.modal-box p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.modal-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #00796b;
+  color: white;
+}
+
+.modal-buttons .cancel-btn {
+  background-color: #ccc;
+  color: black;
+}
+

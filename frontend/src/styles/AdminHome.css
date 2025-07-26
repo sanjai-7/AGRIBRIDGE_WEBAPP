@@ -1,0 +1,91 @@
+/* Container */
+.admin-home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5c5c5;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+.top-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Main Content */
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ededed;
+  padding: 10px 15px;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20%;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #00796b;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+  background-color: #ddd;
+}
