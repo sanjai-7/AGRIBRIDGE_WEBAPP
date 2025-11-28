@@ -16,7 +16,6 @@ AGRIBRIDGE is an innovative web application designed to bridge the gap between f
 
 
 - The OTP is printed to the backend terminal for development/testing purposes.
-(For production, integrate an SMS gateway for OTP delivery.)
 
 ---
 
